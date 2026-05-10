@@ -1,0 +1,5 @@
+url = input("Введите URL: ")
+count = url.count('--')
+result = url.replace('--', '-')
+print(result)
+print(count)
