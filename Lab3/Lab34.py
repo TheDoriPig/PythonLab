@@ -10,9 +10,10 @@ def decorator_factory(start):   #Декортатор функции
 
 @decorator_factory(5)   #Применение декоратора
 def fun(chisla: str):
-    ik = chisla.split()
+    ik = chisla
     sum = 0
     for i in ik:
         sum += int(i)
     return sum
-print(fun("2 67 9 4 24 5"))
+op = input().split()
+print(fun(op))
